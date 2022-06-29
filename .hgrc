@@ -1,0 +1,19 @@
+[ui]
+username = taguchi
+ignore=~/.hgignore
+
+[defaults]
+serve = -p 8000 --style gitweb
+cdiff = -q
+
+[extensions]
+hgext.graphlog =
+hgext.fetch =
+hgext.color =
+hgext.extdiff =
+rebase =
+shelve =
+
+[extdiff]
+cmd.cdiff = colordiff
+opts.cdiff = -uprN
